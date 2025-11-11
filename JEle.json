@@ -2087,7 +2087,7 @@
                 ]
             },
             {
-                "class": "",
+                "class": "JEleSearchField",
                 "properties": [
                     {
                         "type": "properties",
@@ -2769,4 +2769,5 @@
 			}
         ]
     }
+
 ]
