@@ -4,6 +4,7 @@
         "class": [
             {
                 "class": "JEleColumn",
+				"description": "JEle Table에서 사용할 수 있는 컬럼",
                 "properties": [
                     {
                         "type": "properties",
@@ -2771,3 +2772,4 @@
     }
 
 ]
+
