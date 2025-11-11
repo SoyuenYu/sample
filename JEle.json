@@ -1,0 +1,2713 @@
+[
+    {
+        "group": "table",
+        "class": [
+            {
+                "class": "",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "width",
+                        "description": "",
+                        "datatype": "sap.ui.core.CSSSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "hAlign",
+                        "description": "",
+                        "datatype": "sap.ui.core.TextAlign"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "vAlign",
+                        "description": "",
+                        "datatype": "sap.ui.core.VerticalAlign"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "styleClass",
+                        "description": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "visible",
+                        "description": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "minScreenWidth",
+                        "description": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "demandPopin",
+                        "description": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "popinHAlign",
+                        "description": "",
+                        "datatype": "sap.ui.core.TextAlign"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "popinDisplay",
+                        "description": "",
+                        "datatype": "sap.m.PopinDisplay"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "mergeDuplicates",
+                        "description": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "mergeFunctionName",
+                        "description": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "sortIndicator",
+                        "description": "",
+                        "datatype": "sap.ui.core.SortOrder"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "sortProperty",
+                        "description": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "filterProperty",
+                        "description": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "importance",
+                        "description": "",
+                        "datatype": "sap.ui.core.Priority"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "autoPopinWidth",
+                        "description": "",
+                        "datatype": "float"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "enableSideGradient",
+                        "description": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "header",
+                        "description": "",
+                        "datatype": "sap.ui.core.Control"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "footer",
+                        "description": "",
+                        "datatype": "sap.ui.core.Control"
+                    },
+                    {
+                        "type": "associations",
+                        "property": "headerMenu",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "class": "JEleColumnListItem",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "inset",
+                        "description": "Defines the indentation of the container. Setting it to true indents the list.",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "headerText",
+                        "description": "Defines the header text that appears in the control. Note: If the headerToolbar aggregation is set, then this property is ignored. If this is the case, use, for example, a sap.m.Title control in the toolbar to define a header.",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "headerLevel",
+                        "description": "Defines the semantic header level of the header text. This information is, for example, used by assistive technologies, such as screenreaders, to create a hierarchical site map for faster navigation.",
+                        "datatype": "sap.ui.core.TitleLevel"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "headerDesign",
+                        "description": "Defines the header style of the control. Possible values are Standard and Plain.",
+                        "datatype": "sap.m.ListHeaderDesign"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "footerText",
+                        "description": "Defines the footer text that appears in the control.",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "mode",
+                        "description": "Defines the mode of the control (e.g. None, SingleSelect, MultiSelect, Delete).",
+                        "datatype": "sap.m.ListMode"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "width",
+                        "description": "Sets the width of the control.",
+                        "datatype": "sap.ui.core.CSSSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "includeItemInSelection",
+                        "description": "Defines whether the items are selectable by clicking on the item itself rather than having to set the selection control first.",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showUnread",
+                        "description": "Activates the unread indicator for all items, if set to true.",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "noDataText",
+                        "description": "This text is displayed if the control contains no items.",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showNoData",
+                        "description": "Defines whether or not the text specified in the noDataText property is displayed.",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "enableBusyIndicator",
+                        "description": "When this property is set to true, the control will automatically display a busy indicator when it detects that data is being loaded.",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "modeAnimationOn",
+                        "description": "Defines if animations will be shown while switching between modes.",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showSeparators",
+                        "description": "Defines which item separator style will be used.",
+                        "datatype": "sap.m.ListSeparators"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "swipeDirection",
+                        "description": "Defines the direction of the swipe movement to display the control defined in the swipeContent aggregation.",
+                        "datatype": "sap.m.SwipeDirection"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "growing",
+                        "description": "If set to true, enables the growing feature of the control to load more items by requesting from the model.",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "growingThreshold",
+                        "description": "Defines the number of items to be requested from the model for each grow.",
+                        "datatype": "int"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "growingTriggerText",
+                        "description": "Defines the text displayed on the growing button.",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "growingScrollToLoad",
+                        "description": "If set to true, the user can scroll down/up to load more items. Otherwise a growing button is displayed at the bottom/top of the control.",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "growingDirection",
+                        "description": "Defines the direction of the growing feature.",
+                        "datatype": "sap.m.ListGrowingDirection"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "rememberSelections",
+                        "description": "If set to true, this control remembers and retains the selection of the items after a binding update has been performed.",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "keyboardMode",
+                        "description": "Defines keyboard handling behavior of the control.",
+                        "datatype": "sap.m.ListKeyboardMode"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "sticky",
+                        "description": "Defines the section of the control that remains fixed at the top of the page during vertical scrolling.",
+                        "datatype": "sap.m.Sticky[]"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "multiSelectMode",
+                        "description": "Defines the multi-selection mode for the control.",
+                        "datatype": "sap.m.MultiSelectMode"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "items",
+                        "description": "Defines the items contained within this control.",
+                        "datatype": "sap.m.ListItemBase"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "swipeContent",
+                        "description": "User can swipe to bring in this control on the right hand side of an item.",
+                        "datatype": "sap.ui.core.Control"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "headerToolbar",
+                        "description": "The header area can be used as a toolbar to add extra controls for user interactions.",
+                        "datatype": "sap.m.Toolbar"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "infoToolbar",
+                        "description": "A toolbar that is placed below the header to show extra information to the user.",
+                        "datatype": "sap.m.Toolbar"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "contextMenu",
+                        "description": "Defines the context menu of the items.",
+                        "datatype": "sap.ui.core.IContextMenu"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_messageStrip",
+                        "description": "Defines the message strip to display binding-related messages.",
+                        "datatype": "sap.m.MessageStrip"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "noData",
+                        "description": "Defines the custom visualization if there is no data available.",
+                        "datatype": "sap.ui.core.Control"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "footerToolbar",
+                        "description": "하단 Paging용.",
+                        "datatype": "sap.m.Toolbar"
+                    },
+                    {
+                        "type": "associations",
+                        "property": "ariaLabelledBy",
+                        "description": "Association to controls / ids which label this control."
+                    },
+                    {
+                        "type": "events",
+                        "property": "select",
+                        "description": "Fires when selection is changed via user interaction. In MultiSelect mode, this event is also fired on deselection."
+                    },
+                    {
+                        "type": "events",
+                        "property": "selectionChange",
+                        "description": "Fires when selection is changed via user interaction inside the control."
+                    },
+                    {
+                        "type": "events",
+                        "property": "delete",
+                        "description": "Fires when delete icon is pressed by user."
+                    },
+                    {
+                        "type": "events",
+                        "property": "swipe",
+                        "description": "Fires after user's swipe action and before the swipeContent is shown."
+                    },
+                    {
+                        "type": "events",
+                        "property": "growingStarted",
+                        "description": "Fires before the new growing chunk is requested from the model."
+                    },
+                    {
+                        "type": "events",
+                        "property": "growingFinished",
+                        "description": "Fires after the new growing chunk has been fetched from the model and processed by the control."
+                    },
+                    {
+                        "type": "events",
+                        "property": "updateStarted",
+                        "description": "Fires before items binding is updated (e.g. sorting, filtering)."
+                    },
+                    {
+                        "type": "events",
+                        "property": "updateFinished",
+                        "description": "Fires after items binding is updated and processed by the control."
+                    },
+                    {
+                        "type": "events",
+                        "property": "itemPress",
+                        "description": "Fires when an item is pressed unless the item's type property is Inactive."
+                    },
+                    {
+                        "type": "events",
+                        "property": "beforeOpenContextMenu",
+                        "description": "Fired when the context menu is opened."
+                    }
+                ]
+            },
+            {
+                "class": "JElePagingToolbar",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "currentPage",
+                        "description": "",
+                        "datatype": "int"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "totalList",
+                        "description": "",
+                        "datatype": "int"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "pagingThreshold",
+                        "description": "",
+                        "datatype": "int"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "totalPage",
+                        "description": "",
+                        "datatype": "int"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "apiUrl",
+                        "description": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "initFlag",
+                        "description": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_first",
+                        "description": "",
+                        "datatype": "sap.m.Button"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_previous",
+                        "description": "",
+                        "datatype": "sap.m.Button"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_current",
+                        "description": "",
+                        "datatype": "sap.m.Input"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_total",
+                        "description": "",
+                        "datatype": "sap.m.Text"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_next",
+                        "description": "",
+                        "datatype": "sap.m.Button"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_last",
+                        "description": "",
+                        "datatype": "sap.m.Button"
+                    },
+                    {
+                        "type": "events",
+                        "property": "update",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "class": "JEleTable",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "backgroundDesign",
+                        "description": "Sets the background style of the table. Depending on the theme, you can change the state of the background from Solid to Translucent or to Transparent.",
+                        "datatype": "sap.m.BackgroundDesign"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fixedLayout",
+                        "description": "Defines the algorithm to be used to layout the table cells, rows, and columns.",
+                        "datatype": "any"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showOverlay",
+                        "description": "Setting this property to true will show an overlay on top of the table content and prevents the user interaction with it.",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "alternateRowColors",
+                        "description": "Enables alternating table row colors.",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "popinLayout",
+                        "description": "Defines the layout in which the table pop-in rows are rendered.",
+                        "datatype": "sap.m.PopinLayout"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "contextualWidth",
+                        "description": "Defines the contextual width for the sap.m.Table control.",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "autoPopinMode",
+                        "description": "Enables the auto pop-in behavior for the table control.",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "hiddenInPopin",
+                        "description": "Defines which columns should be hidden instead of moved into the pop-in area depending on their importance.",
+                        "datatype": "sap.ui.core.Priority[]"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "enableExport",
+                        "description": "Determines whether the data export is enabled.",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "exportList",
+                        "description": "",
+                        "datatype": "string[]"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "exportHeaderList",
+                        "description": "",
+                        "datatype": "string[]"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "exportFileName",
+                        "description": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "columns",
+                        "description": "Defines the columns of the table.",
+                        "datatype": "sap.m.Column"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_noColumnsMessage",
+                        "description": "Provides a message if no visible columns are available.",
+                        "datatype": "sap.ui.core.Control"
+                    },
+                    {
+                        "type": "events",
+                        "property": "beforeOpenContextMenu",
+                        "description": "Fired when the context menu is opened."
+                    },
+                    {
+                        "type": "events",
+                        "property": "paste",
+                        "description": "This event gets fired when the user pastes content from the clipboard to the table."
+                    },
+                    {
+                        "type": "events",
+                        "property": "popinChanged",
+                        "description": "Fired when the table pop-in has changed."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "common",
+        "class": [
+            {
+                "class": "JEleAutoCard",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "backgroundColor",
+                        "datatype": "string",
+                        "defaultValue": "#2b3e62",
+                        "description": ""
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderRadius",
+                        "datatype": "string",
+                        "defaultValue": "0.5rem",
+                        "description": ""
+                    },
+                    {
+                        "type": "properties",
+                        "property": "padding",
+                        "datatype": "string",
+                        "defaultValue": "6px",
+                        "description": ""
+                    },
+                    {
+                        "type": "properties",
+                        "property": "height",
+                        "datatype": "string",
+                        "defaultValue": "70px",
+                        "description": ""
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fields",
+                        "datatype": "object",
+                        "defaultValue": [
+                        ],
+                        "description": "ex. fields='[ { \"label\": \"넥스트웰\", \"value\": \"Ship-To\"}, { \"label\": \"Hyeonhee Kang\", \"value\": \"Owner Name\"} ]' [{ label, value}] label/value: string | binding object"
+                    }
+                ]
+            },
+            {
+                "class": "JEleAvatarLink",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "text",
+                        "datatype": "string",
+                        "defaultValue": "",
+                        "description": "",
+                        "bindable": "bindable"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showAvatar",
+                        "datatype": "boolean",
+                        "defaultValue": true,
+                        "description": ""
+                    },
+                    {
+                        "type": "properties",
+                        "property": "src",
+                        "datatype": "sap.ui.core.URI",
+                        "defaultValue": null,
+                        "description": ""
+                    },
+                    {
+                        "type": "properties",
+                        "property": "displaySize",
+                        "datatype": "sap.m.AvatarSize",
+                        "defaultValue": "S",
+                        "description": ""
+                    },
+                    {
+                        "type": "properties",
+                        "property": "displayShape",
+                        "datatype": "sap.m.AvatarShape",
+                        "defaultValue": "Circle",
+                        "description": ""
+                    },
+                    {
+                        "type": "properties",
+                        "property": "customDisplaySize",
+                        "datatype": "sap.ui.core.CSSSize",
+                        "defaultValue": "3rem",
+                        "description": ""
+                    },
+                    {
+                        "type": "properties",
+                        "property": "customFontSize",
+                        "datatype": "sap.ui.core.CSSSize",
+                        "defaultValue": "1.125rem",
+                        "description": ""
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_link",
+                        "datatype": "sap.m.Link",
+                        "description": "",
+                        "visibility": "hidden"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_avatar",
+                        "datatype": "sap.m.Avatar",
+                        "description": "",
+                        "visibility": "hidden"
+                    }
+                ]
+            },
+            {
+                "class": "JEleDateMenuButton",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "label",
+                        "description": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "dateLabel",
+                        "description": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "startDate",
+                        "description": "",
+                        "datatype": "object"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "endDate",
+                        "description": "",
+                        "datatype": "object"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "displayFormat",
+                        "description": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "delimiter",
+                        "description": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_btn",
+                        "description": "",
+                        "datatype": "sap.m.Button"
+                    },
+                    {
+                        "type": "events",
+                        "property": "dateChange",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "class": "JEleDatePicker",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "displayFormatType",
+                        "datatype": "string",
+                        "description": "Displays date in this given type in input field. Default value is taken from locale settings. Accepted are values of CalendarType or an empty string. If no type is set, the default type of the configuration is used. Note: If data binding on value property with type sap.ui.model.type.Date is used, this property will be ignored.",
+                        "defaultValue": ""
+                    },
+                    {
+                        "type": "properties",
+                        "property": "secondaryCalendarType",
+                        "datatype": "sap.base.i18n.date.CalendarType",
+                        "description": "If set, the days in the calendar popup are also displayed in this calendar type. If not set, the dates are only displayed in the primary calendar type."
+                    },
+                    {
+                        "type": "properties",
+                        "property": "minDate",
+                        "datatype": "object",
+                        "description": "Minimum date that can be shown and selected in the DatePicker. Must be a UI5Date or JavaScript Date object. Note: If minDate is after maxDate, they are switched before rendering.",
+                        "defaultValue": null
+                    },
+                    {
+                        "type": "properties",
+                        "property": "maxDate",
+                        "datatype": "object",
+                        "description": "Maximum date that can be shown and selected in the DatePicker. Must be a UI5Date or JavaScript Date object. Note: If maxDate is before minDate, they are switched before rendering.",
+                        "defaultValue": null
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showFooter",
+                        "datatype": "boolean",
+                        "description": "Hides or shows the popover's footer.",
+                        "defaultValue": false
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showCurrentDateButton",
+                        "datatype": "boolean",
+                        "description": "Determines whether there is a shortcut navigation to Today. When used in Month, Year or Year-range picker view, the calendar navigates to Day picker view.",
+                        "defaultValue": false
+                    },
+                    {
+                        "type": "properties",
+                        "property": "hideInput",
+                        "datatype": "boolean",
+                        "description": "Determines whether the input field of the picker is hidden or visible. When true, the input field is invisible and can be opened by another control via openBy.",
+                        "defaultValue": false
+                    },
+                    {
+                        "type": "properties",
+                        "property": "calendarWeekNumbering",
+                        "datatype": "sap.base.i18n.date.CalendarWeekNumbering",
+                        "description": "If set, the calendar week numbering is used for display. If not set, the global configuration is used.",
+                        "defaultValue": null
+                    },
+                    {
+                        "type": "properties",
+                        "property": "inputheight",
+                        "datatype": "sap.ui.core.CSSSize",
+                        "description": "",
+                        "defaultValue": "100%"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "addButton",
+                        "datatype": "boolean",
+                        "description": "",
+                        "defaultValue": false
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "specialDates",
+                        "datatype": "sap.ui.core.Element",
+                        "description": "Date Range with type to visualize special days in the Calendar. If one day is assigned to more than one Type, only the first one will be used. To set a single date, set only startDate of the DateRange class.",
+                        "multiple": true,
+                        "singularName": "specialDate"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_popup",
+                        "datatype": "sap.m.ResponsivePopover",
+                        "description": "Internal aggregation that contains the inner picker pop-up.",
+                        "multiple": false,
+                        "visibility": "hidden"
+                    },
+                    {
+                        "type": "associations",
+                        "property": "legend",
+                        "datatype": "sap.ui.core.Control",
+                        "description": "Association to the CalendarLegend explaining the colors of the specialDates. Note: The legend does not have to be rendered but must exist, and all required types must be assigned."
+                    },
+                    {
+                        "type": "events",
+                        "property": "navigate",
+                        "description": "Fired when navigating in Calendar popup."
+                    },
+                    {
+                        "type": "events",
+                        "property": "afterValueHelpOpen",
+                        "description": "Fired when value help dialog opens."
+                    },
+                    {
+                        "type": "events",
+                        "property": "afterValueHelpClose",
+                        "description": "Fired when value help dialog closes."
+                    }
+                ]
+            },
+            {
+                "class": "JEleDialog",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "align",
+                        "description": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "widthPercent",
+                        "description": "",
+                        "datatype": "int"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "heightPercent",
+                        "description": "",
+                        "datatype": "int"
+                    }
+                ]
+            },
+            {
+                "class": "JEleFCLToggle",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "width",
+                        "description": "",
+                        "datatype": "sap.ui.core.CSSSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "height",
+                        "description": "",
+                        "datatype": "sap.ui.core.CSSSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "beginPercent",
+                        "description": "기본 왼쪽 비율",
+                        "datatype": "float"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "sepPercent",
+                        "description": "기본 분리자 비율",
+                        "datatype": "float"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "mode",
+                        "description": "default | rightOnly | leftOnly",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "beginContent",
+                        "description": "",
+                        "datatype": "sap.ui.core.Control"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "endContent",
+                        "description": "",
+                        "datatype": "sap.ui.core.Control"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_sepButton",
+                        "description": "",
+                        "datatype": "sap.m.Button"
+                    },
+                    {
+                        "type": "events",
+                        "property": "modeChange",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "toggle",
+                        "description": "구버전 호환용(이름만 다르고 payload 동일)"
+                    }
+                ]
+            },
+            {
+                "class": "JEleFilterComboBox",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "label",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "selectedKeys",
+                        "description": "",
+                        "defaultValue": [
+                        ],
+                        "datatype": "string[]"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "selectedItems",
+                        "description": "",
+                        "defaultValue": [
+                        ],
+                        "datatype": "object[]"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "items",
+                        "description": "",
+                        "datatype": "sap.ui.core.Item"
+                    },
+                    {
+                        "type": "events",
+                        "property": "selectionChange",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "clear",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "class": "JEleFilterMultiContainer",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "chartButtonVisible",
+                        "description": "",
+                        "defaultValue": "false",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "chartClass",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "menuGroups",
+                        "description": "",
+                        "datatype": "JEleFilterComboBox"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "tokenizer",
+                        "description": "",
+                        "datatype": "sap.m.Tokenizer"
+                    },
+                    {
+                        "type": "associations",
+                        "property": "table",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "chartPress",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "selectionChange",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "class": "JEleFilteredContainer",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "selectedItems",
+                        "description": "",
+                        "defaultValue": {
+                        },
+                        "datatype": "object"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "selectControls",
+                        "description": "",
+                        "datatype": "sap.ui.core.Control"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "filterTokens",
+                        "description": "",
+                        "datatype": "sap.m.Token"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_selectBox",
+                        "description": "",
+                        "datatype": "sap.m.HBox"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_tokenBox",
+                        "description": "",
+                        "datatype": "sap.m.HBox"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "menuButton",
+                        "description": "",
+                        "datatype": "JEleMenuButton"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "dateMenuButton",
+                        "description": "",
+                        "datatype": "JEleDateMenuButton"
+                    },
+                    {
+                        "type": "events",
+                        "property": "selectedChange",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "class": "JEleInlineEditor",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "mode",
+                        "description": "",
+                        "defaultValue": "display",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showSpinner",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "leftWidth",
+                        "description": "",
+                        "defaultValue": "80%",
+                        "datatype": "sap.ui.core.CSSSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "rightWidth",
+                        "description": "",
+                        "defaultValue": "20%",
+                        "datatype": "sap.ui.core.CSSSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "width",
+                        "description": "",
+                        "defaultValue": "100%",
+                        "datatype": "sap.ui.core.CSSSize"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "displayLeft",
+                        "description": "",
+                        "datatype": "sap.ui.core.Control"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "displayRight",
+                        "description": "",
+                        "datatype": "sap.ui.core.Control"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "editLeft",
+                        "description": "",
+                        "datatype": "sap.ui.core.Control"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "editRight",
+                        "description": "",
+                        "datatype": "sap.ui.core.Control"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "pendingLeft",
+                        "description": "",
+                        "datatype": "sap.ui.core.Control"
+                    },
+                    {
+                        "type": "events",
+                        "property": "save",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "class": "JEleInlineEditor2",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "value",
+                        "description": "공통 값 (date는 valueFormat 문자열)",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "editType",
+                        "description": "input | select | date",
+                        "defaultValue": "input",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "placeholder",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "valueState",
+                        "description": "",
+                        "defaultValue": "None",
+                        "datatype": "sap.ui.core.ValueState"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "required",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "editable",
+                        "description": "edit 아이콘 노출 여부",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "commitOnEnter",
+                        "description": "Enter로 저장",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "valueFormat",
+                        "description": "date 모드 내부 값 포맷",
+                        "defaultValue": "yyyy-MM-dd",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "displayFormat",
+                        "description": "보기/피커 표시 포맷",
+                        "defaultValue": "yyyy-MM-dd",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "busy",
+                        "description": "스피너 표시 여부",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "width",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "iconColor",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontSize",
+                        "description": "",
+                        "defaultValue": "0.875rem",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "color",
+                        "description": "",
+                        "defaultValue": "black",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontWeight",
+                        "description": "",
+                        "defaultValue": "normal",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "font",
+                        "description": "",
+                        "defaultValue": "inherit",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "items",
+                        "description": "select 옵션",
+                        "datatype": "sap.ui.core.Item"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_text",
+                        "description": "",
+                        "datatype": "com.jmc.jmclibrary.controls.common.JEleStyleText"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_editBtn",
+                        "description": "",
+                        "datatype": "com.jmc.jmclibrary.controls.common.JEleStyleButton"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_input",
+                        "description": "",
+                        "datatype": "com.jmc.jmclibrary.controls.common.JEleStyleInput"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_select",
+                        "description": "",
+                        "datatype": "sap.m.Select"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_date",
+                        "description": "",
+                        "datatype": "sap.m.DatePicker"
+                    },
+                    {
+                        "type": "events",
+                        "property": "save",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "change",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "editStart",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "editEnd",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "iconPress",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "class": "JEleInlineEditorDatePicker",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "value",
+                        "description": "Date 또는 null",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "valueFormat",
+                        "description": "모델-값 파싱 패턴(문자열일 때)",
+                        "defaultValue": "yyyy-MM-dd",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "displayFormat",
+                        "description": "좌측 표시 포맷",
+                        "defaultValue": "yyyy년 M월 d일",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "color",
+                        "description": "",
+                        "defaultValue": "white",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontSize",
+                        "description": "",
+                        "defaultValue": "14px",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontWeight",
+                        "description": "",
+                        "defaultValue": "500",
+                        "datatype": "string"
+                    }
+                ]
+            },
+            {
+                "class": "JEleInlineEditorSelect",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "selectedText",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "selectedKey",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "color",
+                        "description": "",
+                        "defaultValue": "white",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontSize",
+                        "description": "",
+                        "defaultValue": "14px",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontWeight",
+                        "description": "",
+                        "defaultValue": "500",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "items",
+                        "description": "외부에서 <core:Item/>을 직접 추가할 수도 있고 XML 바인딩(items='{path: ...}')도 가능하도록 래퍼의 items를 유지합니다 ",
+                        "datatype": "sap.ui.core.Item"
+                    }
+                ]
+            },
+            {
+                "class": "JEleInlineEditorText",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "value",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "color",
+                        "description": "",
+                        "defaultValue": "white",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontSize",
+                        "description": "",
+                        "defaultValue": "14px",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontWeight",
+                        "description": "",
+                        "defaultValue": "500",
+                        "datatype": "string"
+                    }
+                ]
+            },
+            {
+                "class": "JEleInput",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "type",
+                        "description": "",
+                        "defaultValue": "InputType.Text",
+                        "datatype": "sap.m.InputType"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "maxLength",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "int"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "dateFormat",
+                        "description": "",
+                        "defaultValue": "YYYY-MM-dd",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showValueHelp",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "valueHelpIconSrc",
+                        "description": "",
+                        "defaultValue": "sap-icon://value-help",
+                        "datatype": "sap.ui.core.URI"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showSuggestion",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "valueHelpOnly",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "filterSuggests",
+                        "description": "",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "maxSuggestionWidth",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "sap.ui.core.CSSSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "startSuggestion",
+                        "description": "",
+                        "defaultValue": 1,
+                        "datatype": "int"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showTableSuggestionValueHelp",
+                        "description": "",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "description",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fieldWidth",
+                        "description": "",
+                        "defaultValue": "50%",
+                        "datatype": "sap.ui.core.CSSSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "valueLiveUpdate",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "selectedKey",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "textFormatMode",
+                        "description": "",
+                        "defaultValue": "InputTextFormatMode.Value",
+                        "datatype": "sap.m.InputTextFormatMode"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "textFormatter",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "function"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "suggestionRowValidator",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "function"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "enableSuggestionsHighlighting",
+                        "description": "",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "enableTableAutoPopinMode",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "autocomplete",
+                        "description": "",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showClearIcon",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "effectiveShowClearIcon",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "separateSuggestions",
+                        "description": "",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "highlightAccKeysRef",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "accesskey",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showEditIcon",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "effectiveShowEditIcon",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "height",
+                        "description": "",
+                        "defaultValue": "40px",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "isMouseOver",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "locationType",
+                        "description": "",
+                        "defaultValue": "list",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "suggestionItems",
+                        "description": "",
+                        "datatype": "sap.ui.core.Item"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "suggestionColumns",
+                        "description": "",
+                        "datatype": "sap.m.Column"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "suggestionRows",
+                        "description": "",
+                        "datatype": "sap.m.ITableItem"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_suggestionPopup",
+                        "description": "",
+                        "datatype": "sap.ui.core.Control"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_valueHelpIcon",
+                        "description": "",
+                        "datatype": "sap.ui.core.Icon"
+                    },
+                    {
+                        "type": "associations",
+                        "property": "selectedItem",
+                        "description": ""
+                    },
+                    {
+                        "type": "associations",
+                        "property": "selectedRow",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "liveChange",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "valueHelpRequest",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "suggest",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "suggestionItemSelected",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "submit",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "class": "JEleLink",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "text",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontSize",
+                        "description": "",
+                        "defaultValue": "0.875rem",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "color",
+                        "description": "",
+                        "defaultValue": "#0064d9",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontWeight",
+                        "description": "",
+                        "defaultValue": "normal",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "font",
+                        "description": "",
+                        "defaultValue": "inherit",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "avatar",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "sap.ui.core.URI"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "avatarDisplaySize",
+                        "description": "",
+                        "defaultValue": "AvatarSize.S",
+                        "datatype": "sap.m.AvatarSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "avatarDisplayShape",
+                        "description": "",
+                        "defaultValue": "AvatarShape.Circle",
+                        "datatype": "sap.m.AvatarShape"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "avatarCustomDisplaySize",
+                        "description": "",
+                        "defaultValue": "3rem",
+                        "datatype": "sap.ui.core.CSSSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "avatarCustomFontSize",
+                        "description": "",
+                        "defaultValue": "1.125rem",
+                        "datatype": "sap.ui.core.CSSSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "endAvatar",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "sap.ui.core.URI"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "endAvatarDisplaySize",
+                        "description": "",
+                        "defaultValue": "AvatarSize.S",
+                        "datatype": "sap.m.AvatarSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "endAvatarDisplayShape",
+                        "description": "",
+                        "defaultValue": "AvatarShape.Circle",
+                        "datatype": "sap.m.AvatarShape"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "endAvatarCustomDisplaySize",
+                        "description": "",
+                        "defaultValue": "3rem",
+                        "datatype": "sap.ui.core.CSSSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "endAvatarCustomFontSize",
+                        "description": "",
+                        "defaultValue": "1.125rem",
+                        "datatype": "sap.ui.core.CSSSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "button",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "sap.ui.core.URI"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "buttonHoverEffect",
+                        "description": "",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "endButton",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "sap.ui.core.URI"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "endButtonHoverEffect",
+                        "description": "",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_link",
+                        "description": "",
+                        "datatype": "sap.m.Link"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_avatarBegin",
+                        "description": "",
+                        "datatype": "sap.m.Avatar"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_avatarEnd",
+                        "description": "",
+                        "datatype": "sap.m.Avatar"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_buttonBegin",
+                        "description": "",
+                        "datatype": "sap.m.Button"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_buttonEnd",
+                        "description": "",
+                        "datatype": "sap.m.Button"
+                    },
+                    {
+                        "type": "events",
+                        "property": "linkPress",
+                        "description": "sap.m.Link press"
+                    },
+                    {
+                        "type": "events",
+                        "property": "buttonPress",
+                        "description": "앞 버튼 press"
+                    },
+                    {
+                        "type": "events",
+                        "property": "endButtonPress",
+                        "description": "뒤 버튼 press"
+                    }
+                ]
+            },
+            {
+                "class": "JEleMenuButton",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "label",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "selectedKeys",
+                        "description": "",
+                        "defaultValue": [
+                        ],
+                        "datatype": "object[]"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "items",
+                        "description": "",
+                        "datatype": "sap.ui.core.Item"
+                    },
+                    {
+                        "type": "events",
+                        "property": "selectionChange",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "clearAll",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "class": "JElePromptFileUploader",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "prompt",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "placeholder",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "width",
+                        "description": "",
+                        "defaultValue": "100%",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "enabled",
+                        "description": "",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "buttonVisible",
+                        "description": "",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "_mainVBox",
+                        "description": "",
+                        "datatype": "sap.m.VBox"
+                    },
+                    {
+                        "type": "events",
+                        "property": "submit",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "class": "JEleRightPanel",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "fontWeight",
+                        "description": "",
+                        "defaultValue": "normal",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontColor",
+                        "description": "",
+                        "defaultValue": "black",
+                        "datatype": "string"
+                    }
+                ]
+            },
+            {
+                "class": "",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "value",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "width",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "sap.ui.core.CSSSize"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "enabled",
+                        "description": "",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "visible",
+                        "description": "",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "maxLength",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "int"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "placeholder",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showMagnifier",
+                        "description": "",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showRefreshButton",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "refreshButtonTooltip",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "showSearchButton",
+                        "description": "",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "enableSuggestions",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "selectOnFocus",
+                        "description": "",
+                        "defaultValue": true,
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "isExpanded",
+                        "description": "isExpanded === false일 경우 custom css& render 적용",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "aggregations",
+                        "property": "suggestionItems",
+                        "description": "",
+                        "datatype": "sap.m.SuggestionItem"
+                    },
+                    {
+                        "type": "associations",
+                        "property": "ariaDescribedBy",
+                        "description": ""
+                    },
+                    {
+                        "type": "associations",
+                        "property": "ariaLabelledBy",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "searchIconPress",
+                        "description": "isExpanded = false와 searchIconPress 함께 사용"
+                    },
+                    {
+                        "type": "events",
+                        "property": "search",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "change",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "liveChange",
+                        "description": ""
+                    },
+                    {
+                        "type": "events",
+                        "property": "suggest",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "class": "JEleStyleAvatar",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "customBackgroundColor",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "customColor",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "imageSize",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    }
+                ]
+            },
+            {
+                "class": "JEleStyleButton",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "iconColor",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "iconRotate",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "padding",
+                        "description": "CSS padding 값 (예: 0.5rem 1rem 등)",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "height",
+                        "description": "CSS height 값 (예: 2rem 등)",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderColor",
+                        "description": "CSS border-color 값 (예: red 등)",
+                        "defaultValue": "#fff",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontWeight",
+                        "description": "CSS font-weight 값 (예: bold, 600 등)",
+                        "defaultValue": "600",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontSize",
+                        "description": "CSS font-size 값 (예: 1rem, 16px 등)",
+                        "defaultValue": "1rem",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "margin",
+                        "description": " CSS margin 값 (예: 0.5rem, 1rem 등)",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "hoverOverlayEffect",
+                        "description": "",
+                        "defaultValue": "true",
+                        "datatype": "boolean"
+                    }
+                ]
+            },
+            {
+                "class": "JEleStyleCard",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "backgroundColor",
+                        "description": "",
+                        "defaultValue": "#2b3e62",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderRadius",
+                        "description": "",
+                        "defaultValue": "0.5rem",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "padding",
+                        "description": "",
+                        "defaultValue": "6px",
+                        "datatype": "string"
+                    }
+                ]
+            },
+            {
+                "class": "JEleStyleDatePicker",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "backgroundColor",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "color",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    }
+                ]
+            },
+            {
+                "class": "JEleStyleHBox",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "border",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderTop",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderBottom",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderLeft",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderRight",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderRadius",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "padding",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    }
+                ]
+            },
+            {
+                "class": "JEleStyleInput",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "fontSize",
+                        "description": "",
+                        "defaultValue": "0.875rem",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "color",
+                        "description": "",
+                        "defaultValue": "black",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontWeight",
+                        "description": "",
+                        "defaultValue": "normal",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "font",
+                        "description": "",
+                        "defaultValue": "inherit",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "backgroundColor",
+                        "description": "",
+                        "defaultValue": "transparent",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "border",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    }
+                ]
+            },
+            {
+                "class": "JEleStyleObjectStatus",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "color",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontSize",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontWeight",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "font",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "backgroundColor",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "border",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderRadius",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "padding",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    }
+                ]
+            },
+            {
+                "class": "JEleStyleSelect",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "backgroundColor",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "color",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "itemColor",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "itemFontWeight",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "itemFont",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "itemHeight",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    }
+                ]
+            },
+            {
+                "class": "JEleStyleText",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "fontSize",
+                        "description": "",
+                        "defaultValue": "0.875rem",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "color",
+                        "description": "",
+                        "defaultValue": "black",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontWeight",
+                        "description": "",
+                        "defaultValue": "normal",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "font",
+                        "description": "",
+                        "defaultValue": "inherit",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "required",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "boolean"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "margin",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    }
+                ]
+            },
+            {
+                "class": "JEleStyleToken",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "color",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "fontWeight",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "font",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "backgroundColor",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "border",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderRadius",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "selectedColor",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "selectedFontWeight",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "selectedFont",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "selectedBackgroundColor",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "selectedBorder",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "selectedBorderRadius",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    }
+                ]
+            },
+            {
+                "class": "JEleStyleVBox",
+                "properties": [
+                    {
+                        "type": "properties",
+                        "property": "border",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderTop",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderBottom",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderLeft",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderRight",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "borderRadius",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    },
+                    {
+                        "type": "properties",
+                        "property": "padding",
+                        "description": "",
+                        "defaultValue": "",
+                        "datatype": "string"
+                    }
+                ]
+            },
+			{
+				"class": "JEleSuggest"
+			},
+			{
+				"class": "JEleSuggestionsList"
+			}
+        ]
+    }
+]
